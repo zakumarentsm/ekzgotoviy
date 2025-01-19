@@ -1,0 +1,54 @@
+.map-container {
+    height: calc(100vh - 56px);
+    padding: 0;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.filter-panel {
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+}
+
+/* Стили для балуна карты */
+.resource-balloon {
+    padding: 15px;
+    max-width: 300px;
+}
+
+.resource-balloon h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+.resource-balloon p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.resource-balloon .resource-type {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.resource-balloon .working-hours {
+    color: #666;
+    font-style: italic;
+}
+
+/* Стили для меток на карте */
+.map-marker {
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+} 

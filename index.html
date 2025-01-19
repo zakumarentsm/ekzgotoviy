@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Language - Языковая школа</title>
+    <meta name="description" content="Лучшая языковая школа в России. Изучение иностранных языков с профессиональными преподавателями.">
+    <meta property="og:site_name" content="Best Language">
+    <link rel="canonical" href="https://best-language.ru">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/logo.png" alt="Логотип" height="40">
+                Языковая школа
+            </a>
+            <nav>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html#courses">Курсы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contacts">Контакты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cabinet.html">Личный кабинет</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Область уведомлений -->
+    <div id="notifications" class="position-fixed top-0 end-0 p-3"></div>
+
+    <!-- Основной контент -->
+    <main>
+        <!-- Блок описания языковой школы -->
+        <section id="about" class="py-5">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-6">
+                        <h1 class="display-4 mb-4">О нашей языковой школе</h1>
+                        <p class="lead mb-4">Мы помогаем студентам освоить популярные языки мира в комфортной и дружественной атмосфере с 2010 года.</p>
+                        
+                        <div class="achievements mb-4">
+                            <div class="row g-4">
+                                <div class="col-6">
+                                    <div class="achievement-item text-center p-3 rounded bg-light">
+                                        <h3 class="h2 text-primary">13+</h3>
+                                        <p class="mb-0">лет опыта</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="achievement-item text-center p-3 rounded bg-light">
+                                        <h3 class="h2 text-primary">5000+</h3>
+                                        <p class="mb-0">выпускников</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="achievement-item text-center p-3 rounded bg-light">
+                                        <h3 class="h2 text-primary">98%</h3>
+                                        <p class="mb-0">довольных студентов</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="achievement-item text-center p-3 rounded bg-light">
+                                        <h3 class="h2 text-primary">25+</h3>
+                                        <p class="mb-0">преподавателей</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h5 class="mb-3">Наши преимущества:</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Индивидуальный подход к каждому студенту
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Современные методики обучения
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Опытные преподаватели-носители языка
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Удобное расписание и локация
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mission-card bg-white rounded shadow-lg p-4">
+                            <div class="mission-header mb-4">
+                                <h4 class="text-primary">
+                                    <i class="fas fa-star me-2"></i>
+                                    Наша миссия
+                                </h4>
+                                <p class="lead mb-0">Сделать изучение языков доступным и увлекательным для каждого</p>
+                            </div>
+                            
+                            <div class="mission-content">
+                                <div class="mission-item mb-4">
+                                    <h5 class="text-secondary">
+                                        <i class="fas fa-bullseye me-2"></i>
+                                        Цели
+                                    </h5>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2">
+                                            <i class="fas fa-check-circle text-success me-2"></i>
+                                            Обеспечить высокое качество языкового образования
+                                        </li>
+                                        <li class="mb-2">
+                                            <i class="fas fa-check-circle text-success me-2"></i>
+                                            Развивать международное сотрудничество
+                                        </li>
+                                        <li class="mb-2">
+                                            <i class="fas fa-check-circle text-success me-2"></i>
+                                            Внедрять инновационные методики обучения
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="mission-item">
+                                    <h5 class="text-secondary">
+                                        <i class="fas fa-heart me-2"></i>
+                                        Ценности
+                                    </h5>
+                                    <div class="row g-3">
+                                        <div class="col-6">
+                                            <div class="value-card bg-light p-3 rounded text-center">
+                                                <i class="fas fa-graduation-cap text-primary mb-2"></i>
+                                                <h6>Профессионализм</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="value-card bg-light p-3 rounded text-center">
+                                                <i class="fas fa-users text-primary mb-2"></i>
+                                                <h6>Командная работа</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="value-card bg-light p-3 rounded text-center">
+                                                <i class="fas fa-lightbulb text-primary mb-2"></i>
+                                                <h6>Инновации</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="value-card bg-light p-3 rounded text-center">
+                                                <i class="fas fa-handshake text-primary mb-2"></i>
+                                                <h6>Доверие</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h2 class="text-center mb-4">Языки обучения</h2>
+                        <div class="row g-4">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="language-card p-4 bg-light rounded text-center">
+                                    <i class="fas fa-language fa-3x text-primary mb-3"></i>
+                                    <h5>Русский язык</h5>
+                                    <p class="small mb-0">Для иностранных студентов всех уровней</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="language-card p-4 bg-light rounded text-center">
+                                    <i class="fas fa-globe-americas fa-3x text-primary mb-3"></i>
+                                    <h5>Английский язык</h5>
+                                    <p class="small mb-0">Британский и американский варианты</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="language-card p-4 bg-light rounded text-center">
+                                    <i class="fas fa-globe-europe fa-3x text-primary mb-3"></i>
+                                    <h5>Европейские языки</h5>
+                                    <p class="small mb-0">Испанский, Французский, Итальянский</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="language-card p-4 bg-light rounded text-center">
+                                    <i class="fas fa-globe-asia fa-3x text-primary mb-3"></i>
+                                    <h5>Азиатские языки</h5>
+                                    <p class="small mb-0">Китайский, Японский</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-center mb-4">Процесс обучения</h2>
+                        <div class="row g-4">
+                            <div class="col-md-3">
+                                <div class="process-step text-center">
+                                    <div class="step-number bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
+                                        <span>1</span>
+                                    </div>
+                                    <h5>Тестирование</h5>
+                                    <p class="small">Определение текущего уровня знаний</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="process-step text-center">
+                                    <div class="step-number bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
+                                        <span>2</span>
+                                    </div>
+                                    <h5>Подбор программы</h5>
+                                    <p class="small">Индивидуальный план обучения</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="process-step text-center">
+                                    <div class="step-number bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
+                                        <span>3</span>
+                                    </div>
+                                    <h5>Обучение</h5>
+                                    <p class="small">Регулярные занятия с преподавателем</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="process-step text-center">
+                                    <div class="step-number bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
+                                        <span>4</span>
+                                    </div>
+                                    <h5>Практика</h5>
+                                    <p class="small">Разговорные клубы и мероприятия</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Преимущества изучения русского языка -->
+        <section id="benefits" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Преимущества изучения русского языка</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Карьерные возможности</h3>
+                                <p class="card-text">Знание русского языка открывает новые перспективы для работы.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Богатая культура</h3>
+                                <p class="card-text">Погрузитесь в мир русской литературы и искусства.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Академические перспективы</h3>
+                                <p class="card-text">Возможность учиться в российских университетах.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Курсы -->
+        <section id="courses" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Наши курсы</h2>
+                <!-- Динамический список курсов -->
+                <div class="row" id="coursesList">
+                    <!-- Курсы будут добавлены через JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция преподавателей -->
+        <section id="tutors" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Наши преподаватели</h2>
+                
+                <!-- Форма поиска преподавателей -->
+                <div class="row mb-4">
+                    <div class="col-md-8 mx-auto">
+                        <form id="tutorSearchForm">
+                            <div class="row g-3">
+                                <div class="col-md-4">
+                                    <select class="form-select" id="languageLevel">
+                                        <option value="">Уровень языка</option>
+                                        <option value="beginner">Начальный</option>
+                                        <option value="intermediate">Средний</option>
+                                        <option value="advanced">Продвинутый</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <p class="mb-2">Выберите удобные дни:</p>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="monday">
+                                        <label class="form-check-label" for="monday">Понедельник</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="tuesday">
+                                        <label class="form-check-label" for="tuesday">Вторник</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="wednesday">
+                                        <label class="form-check-label" for="wednesday">Среда</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="thursday">
+                                        <label class="form-check-label" for="thursday">Четверг</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="friday">
+                                        <label class="form-check-label" for="friday">Пятница</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="saturday">
+                                        <label class="form-check-label" for="saturday">Суббота</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="sunday">
+                                        <label class="form-check-label" for="sunday">Воскресенье</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <button type="submit" class="btn btn-primary w-100">Найти преподавателя</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Список преподавателей -->
+                <div class="row g-4" id="tutorsList">
+                    <!-- Преподаватели будут добавлены динамически -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция контактов -->
+        <section id="contacts" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Контактная информация</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title h5 mb-4">Наши контакты</h3>
+                                <ul class="list-unstyled">
+                                    <li class="mb-3">
+                                        <i class="fas fa-phone me-2 text-primary"></i>
+                                        <a href="tel:+79777777777" class="text-decoration-none">+7 (977) 777-77-77</a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="fas fa-envelope me-2 text-primary"></i>
+                                        <a href="mailto:info@best-language.ru" class="text-decoration-none">info@best-language.ru</a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="fas fa-map-marker-alt me-2 text-primary"></i>
+                                        г. Москва, ул. Малая Бронная, д. 38
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="fas fa-clock me-2 text-primary"></i>
+                                        Пн-Пт: 9:00 - 20:00<br>
+                                        Сб: 10:00 - 16:00<br>
+                                        Вс: выходной
+                                    </li>
+                                </ul>
+                                <div class="mt-4">
+                                    <h4 class="h6 mb-3">Мы в социальных сетях:</h4>
+                                    <a href="#" class="text-decoration-none me-3">
+                                        <i class="fab fa-vk fa-2x text-primary"></i>
+                                    </a>
+                                    <a href="#" class="text-decoration-none me-3">
+                                        <i class="fab fa-telegram fa-2x text-primary"></i>
+                                    </a>
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="fab fa-whatsapp fa-2x text-primary"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title h5 mb-4">Напишите нам</h3>
+                                <form id="contactForm">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Ваше имя</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Сообщение</label>
+                                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Отправить сообщение</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Добавить в секцию hero или в другое подходящее место -->
+        <div class="text-center mb-4">
+            <a href="tutors.html" class="btn btn-primary btn-lg">
+                <i class="fas fa-search me-2"></i>Найти преподавателя
+            </a>
+        </div>
+    </main>
+
+    <!-- Подключение скриптов -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Модальное окно записи на курс -->
+    <div class="modal fade" id="bookCourseModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Запись на курс</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="bookCourseForm" onsubmit="submitOrder(event)">
+                        <input type="hidden" id="courseId">
+                        <input type="hidden" id="courseName">
+                        <input type="hidden" id="courseTeacher">
+                        
+                        <div class="mb-3">
+                            <label for="studentName" class="form-label">Ваше имя</label>
+                            <input type="text" class="form-control" id="studentName" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="studentPhone" class="form-label">Телефон</label>
+                            <input type="tel" class="form-control" id="studentPhone" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="studentEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="studentEmail" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="startDate" class="form-label">Дата начала</label>
+                            <select class="form-select" id="startDate" required onchange="updateOrderPrice(currentCourse)">
+                            </select>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="startTime" class="form-label">Время начала</label>
+                            <select class="form-select" id="startTime" required onchange="updateOrderPrice(currentCourse)">
+                                <option value="09:00">09:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="18:00">18:00</option>
+                                <option value="20:00">20:00</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="studentsCount" class="form-label">Количество студентов</label>
+                            <input type="number" class="form-control" id="studentsCount" min="1" max="20" value="1" 
+                                   required onchange="updateOrderPrice(currentCourse)">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="courseFormat" class="form-label">Формат обучения</label>
+                            <select class="form-select" id="courseFormat" required>
+                                <option value="online">Онлайн</option>
+                                <option value="offline">Очно</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Дополнительные опции</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="supplementary" 
+                                       onchange="updateOrderPrice(currentCourse)">
+                                <label class="form-check-label" for="supplementary">
+                                    Дополнительные материалы (+2000₽)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="assessment" 
+                                       onchange="updateOrderPrice(currentCourse)">
+                                <label class="form-check-label" for="assessment">
+                                    Оценка уровня владения языком (+300₽)
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="alert alert-info">
+                            <strong>Итоговая стоимость: </strong>
+                            <span id="totalPrice">0</span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary w-100">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

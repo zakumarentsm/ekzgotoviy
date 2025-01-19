@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация - Best Language</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo.png" alt="Логотип" height="40">
+                Best Language
+            </a>
+            <nav>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html#courses">Курсы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tutors.html">Репетиторы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-lg">
+                    <div class="card-body p-5">
+                        <h2 class="text-center mb-4">Регистрация</h2>
+                        <form id="registerForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Имя</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="surname" class="form-label">Фамилия</label>
+                                <input type="text" class="form-control" id="surname" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Телефон</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Пароль</label>
+                                <div class="input-group">
+                                    <input type="password" class="form-control" id="password" required>
+                                    <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="confirmPassword" class="form-label">Подтверждение пароля</label>
+                                <div class="input-group">
+                                    <input type="password" class="form-control" id="confirmPassword" required>
+                                    <button class="btn btn-outline-secondary" type="button" id="toggleConfirmPassword">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="terms" required>
+                                <label class="form-check-label" for="terms">
+                                    Я согласен с <a href="#">условиями использования</a> и <a href="#">политикой конфиденциальности</a>
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Зарегистрироваться</button>
+                        </form>
+                        <div class="text-center mt-3">
+                            <p>Уже есть аккаунт? <a href="login.html">Войти</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Область уведомлений -->
+    <div id="notifications" class="position-fixed top-0 end-0 p-3"></div>
+
+    <!-- Подключение скриптов -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html> 

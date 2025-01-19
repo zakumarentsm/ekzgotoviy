@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Преподаватели - Best Language</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo.png" alt="Логотип" height="40">
+                Языковая школа
+            </a>
+            <nav>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html#courses">Курсы</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="tutors.html">Преподаватели</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contacts">Контакты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cabinet.html">Личный кабинет</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container py-5">
+        <div class="text-center mb-4">
+            <h1 class="mb-3">Наши преподаватели</h1>
+        </div>
+
+        <!-- Вкладки с языками -->
+        <ul class="nav nav-tabs mb-4 flex-nowrap overflow-auto" id="languageTabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#allTutors">Все преподаватели</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#russianTutors">Русский язык</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#englishTutors">Английский язык</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#spanishTutors">Испанский язык</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#frenchTutors">Французский язык</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#italianTutors">Итальянский язык</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#chineseTutors">Китайский язык</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#japaneseTutors">Японский язык</a>
+            </li>
+        </ul>
+
+        <!-- Содержимое вкладок -->
+        <div class="tab-content" id="tutorsContent">
+            <!-- Все преподаватели -->
+            <div class="tab-pane fade show active" id="allTutors">
+                <div class="row">
+                    <!-- Преподаватель 1 -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card tutor-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Анна Петрова</h5>
+                                <div class="tutor-info">
+                                    <div class="d-flex flex-wrap justify-content-between">
+                                        <p class="me-2"><strong>Опыт:</strong> 5 лет</p>
+                                        <p><strong>Цена:</strong> 2000₽/час</p>
+                                    </div>
+                                    <p class="mb-2"><strong>Языки:</strong> Русский, Английский</p>
+                                    <p><strong>Владение языками:</strong> Русский, Английский, Французский</p>
+                                    <p><strong>Уровни преподавания:</strong> Начальный, Средний, Продвинутый</p>
+                                    <p><strong>Доступные дни:</strong> Понедельник, Среда, Пятница</p>
+                                </div>
+                                <button class="btn btn-primary mt-3 w-100" onclick="tutorsManager.showBookingForm(1)">Записаться к преподавателю</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Преподаватель 2 -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card tutor-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Михаил Иванов</h5>
+                                <div class="tutor-info">
+                                    <div class="d-flex flex-wrap justify-content-between">
+                                        <p class="me-2"><strong>Опыт:</strong> 8 лет</p>
+                                        <p><strong>Цена:</strong> 2500₽/час</p>
+                                    </div>
+                                    <p class="mb-2"><strong>Языки:</strong> Английский, Немецкий</p>
+                                    <p><strong>Владение языками:</strong> Русский, Английский, Немецкий</p>
+                                    <p><strong>Уровни преподавания:</strong> Средний, Продвинутый</p>
+                                    <p><strong>Доступные дни:</strong> Вторник, Четверг, Суббота</p>
+                                </div>
+                                <button class="btn btn-primary mt-3 w-100" onclick="tutorsManager.showBookingForm(2)">Записаться к преподавателю</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Преподаватель 3 -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card tutor-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Екатерина Смирнова</h5>
+                                <div class="tutor-info">
+                                    <div class="d-flex flex-wrap justify-content-between">
+                                        <p class="me-2"><strong>Опыт:</strong> 6 лет</p>
+                                        <p><strong>Цена:</strong> 2200₽/час</p>
+                                    </div>
+                                    <p class="mb-2"><strong>Языки:</strong> Испанский, Итальянский</p>
+                                    <p><strong>Владение языками:</strong> Русский, Испанский, Итальянский</p>
+                                    <p><strong>Уровни преподавания:</strong> Начальный, Средний, Продвинутый</p>
+                                    <p><strong>Доступные дни:</strong> Понедельник, Среда, Пятница</p>
+                                </div>
+                                <button class="btn btn-primary mt-3 w-100" onclick="tutorsManager.showBookingForm(3)">Записаться к преподавателю</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Преподаватель 4 -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card tutor-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Александр Козлов</h5>
+                                <div class="tutor-info">
+                                    <div class="d-flex flex-wrap justify-content-between">
+                                        <p class="me-2"><strong>Опыт:</strong> 10 лет</p>
+                                        <p><strong>Цена:</strong> 3000₽/час</p>
+                                    </div>
+                                    <p class="mb-2"><strong>Языки:</strong> Китайский</p>
+                                    <p><strong>Владение языками:</strong> Русский, Китайский, Английский</p>
+                                    <p><strong>Уровни преподавания:</strong> Начальный, Средний, Продвинутый</p>
+                                    <p><strong>Доступные дни:</strong> Вторник, Четверг, Суббота</p>
+                                </div>
+                                <button class="btn btn-primary mt-3 w-100" onclick="tutorsManager.showBookingForm(4)">Записаться к преподавателю</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Преподаватель 5 -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card tutor-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Мария Соколова</h5>
+                                <div class="tutor-info">
+                                    <div class="d-flex flex-wrap justify-content-between">
+                                        <p class="me-2"><strong>Опыт:</strong> 4 года</p>
+                                        <p><strong>Цена:</strong> 2800₽/час</p>
+                                    </div>
+                                    <p class="mb-2"><strong>Языки:</strong> Японский</p>
+                                    <p><strong>Владение языками:</strong> Русский, Японский, Английский</p>
+                                    <p><strong>Уровни преподавания:</strong> Начальный, Средний, Продвинутый</p>
+                                    <p><strong>Доступные дни:</strong> Понедельник, Среда, Пятница</p>
+                                </div>
+                                <button class="btn btn-primary mt-3 w-100" onclick="tutorsManager.showBookingForm(5)">Записаться к преподавателю</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Преподаватель 6 -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card tutor-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Дмитрий Новиков</h5>
+                                <div class="tutor-info">
+                                    <div class="d-flex flex-wrap justify-content-between">
+                                        <p class="me-2"><strong>Опыт:</strong> 7 лет</p>
+                                        <p><strong>Цена:</strong> 2400₽/час</p>
+                                    </div>
+                                    <p class="mb-2"><strong>Языки:</strong> Французский</p>
+                                    <p><strong>Владение языками:</strong> Русский, Французский, Английский</p>
+                                    <p><strong>Уровни преподавания:</strong> Начальный, Средний, Продвинутый</p>
+                                    <p><strong>Доступные дни:</strong> Вторник, Четверг, Суббота</p>
+                                </div>
+                                <button class="btn btn-primary mt-3 w-100" onclick="tutorsManager.showBookingForm(6)">Записаться к преподавателю</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Преподаватель 7 -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card tutor-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Ольга Морозова</h5>
+                                <div class="tutor-info">
+                                    <div class="d-flex flex-wrap justify-content-between">
+                                        <p class="me-2"><strong>Опыт:</strong> 9 лет</p>
+                                        <p><strong>Цена:</strong> 2600₽/час</p>
+                                    </div>
+                                    <p class="mb-2"><strong>Языки:</strong> Итальянский, Испанский</p>
+                                    <p><strong>Владение языками:</strong> Русский, Итальянский, Испанский</p>
+                                    <p><strong>Уровни преподавания:</strong> Начальный, Средний, Продвинутый</p>
+                                    <p><strong>Доступные дни:</strong> Понедельник, Среда, Пятница</p>
+                                </div>
+                                <button class="btn btn-primary mt-3 w-100" onclick="tutorsManager.showBookingForm(7)">Записаться к преподавателю</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Преподаватель 8 -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card tutor-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Сергей Волков</h5>
+                                <div class="tutor-info">
+                                    <div class="d-flex flex-wrap justify-content-between">
+                                        <p class="me-2"><strong>Опыт:</strong> 5 лет</p>
+                                        <p><strong>Цена:</strong> 1800₽/час</p>
+                                    </div>
+                                    <p class="mb-2"><strong>Языки:</strong> Английский</p>
+                                    <p><strong>Владение языками:</strong> Русский, Английский, Немецкий</p>
+                                    <p><strong>Уровни преподавания:</strong> Начальный, Средний, Продвинутый</p>
+                                    <p><strong>Доступные дни:</strong> Вторник, Четверг, Суббота</p>
+                                </div>
+                                <button class="btn btn-primary mt-3 w-100" onclick="tutorsManager.showBookingForm(8)">Записаться к преподавателю</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Преподаватель 9 -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card tutor-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Наталья Кузнецова</h5>
+                                <div class="tutor-info">
+                                    <div class="d-flex flex-wrap justify-content-between">
+                                        <p class="me-2"><strong>Опыт:</strong> 6 лет</p>
+                                        <p><strong>Цена:</strong> 2700₽/час</p>
+                                    </div>
+                                    <p class="mb-2"><strong>Языки:</strong> Китайский</p>
+                                    <p><strong>Владение языками:</strong> Русский, Китайский, Английский</p>
+                                    <p><strong>Уровни преподавания:</strong> Начальный, Средний, Продвинутый</p>
+                                    <p><strong>Доступные дни:</strong> Понедельник, Среда, Пятница</p>
+                                </div>
+                                <button class="btn btn-primary mt-3 w-100" onclick="tutorsManager.showBookingForm(9)">Записаться к преподавателю</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Русский язык -->
+            <div class="tab-pane fade" id="russianTutors">
+                <div class="row">
+                    <!-- Анна Петрова -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card tutor-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Анна Петрова</h5>
+                                <div class="tutor-info">
+                                    <div class="d-flex flex-wrap justify-content-between">
+                                        <p class="me-2"><strong>Опыт:</strong> 5 лет</p>
+                                        <p><strong>Цена:</strong> 2000₽/час</p>
+                                    </div>
+                                    <p class="mb-2"><strong>Языки:</strong> Русский, Английский</p>
+                                    <p><strong>Владение языками:</strong> Русский, Английский, Французский</p>
+                                    <p><strong>Уровни преподавания:</strong> Начальный, Средний, Продвинутый</p>
+                                    <p><strong>Доступные дни:</strong> Понедельник, Среда, Пятница</p>
+                                </div>
+                                <button class="btn btn-primary mt-3 w-100" onclick="tutorsManager.showBookingForm(1)">Записаться к преподавателю</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Английский язык -->
+            <div class="tab-pane fade" id="englishTutors">
+                <div class="row">
+                    <!-- Михаил Иванов -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card tutor-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Михаил Иванов</h5>
+                                <div class="tutor-info">
+                                    <div class="d-flex flex-wrap justify-content-between">
+                                        <p class="me-2"><strong>Опыт:</strong> 8 лет</p>
+                                        <p><strong>Цена:</strong> 2500₽/час</p>
+                                    </div>
+                                    <p class="mb-2"><strong>Языки:</strong> Английский, Немецкий</p>
+                                    <p><strong>Владение языками:</strong> Русский, Английский, Немецкий</p>
+                                    <p><strong>Уровни преподавания:</strong> Средний, Продвинутый</p>
+                                    <p><strong>Доступные дни:</strong> Вторник, Четверг, Суббота</p>
+                                </div>
+                                <button class="btn btn-primary mt-3 w-100" onclick="tutorsManager.showBookingForm(2)">Записаться к преподавателю</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Сергей Волков -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card tutor-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Сергей Волков</h5>
+                                <div class="tutor-info">
+                                    <div class="d-flex flex-wrap justify-content-between">
+                                        <p class="me-2"><strong>Опыт:</strong> 5 лет</p>
+                                        <p><strong>Цена:</strong> 1800₽/час</p>
+                                    </div>
+                                    <p class="mb-2"><strong>Языки:</strong> Английский</p>
+                                    <p><strong>Владение языками:</strong> Русский, Английский, Немецкий</p>
+                                    <p><strong>Уровни преподавания:</strong> Начальный, Средний, Продвинутый</p>
+                                    <p><strong>Доступные дни:</strong> Вторник, Четверг, Суббота</p>
+                                </div>
+                                <button class="btn btn-primary mt-3 w-100" onclick="tutorsManager.showBookingForm(8)">Записаться к преподавателю</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Испанский язык -->
+            <div class="tab-pane fade" id="spanishTutors">
+                <div class="row">
+                    <!-- Екатерина Смирнова -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card tutor-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Екатерина Смирнова</h5>
+                                <div class="tutor-info">
+                                    <div class="d-flex flex-wrap justify-content-between">
+                                        <p class="me-2"><strong>Опыт:</strong> 6 лет</p>
+                                        <p><strong>Цена:</strong> 2200₽/час</p>
+                                    </div>
+                                    <p class="mb-2"><strong>Языки:</strong> Испанский, Итальянский</p>
+                                    <p><strong>Владение языками:</strong> Русский, Испанский, Итальянский</p>
+                                    <p><strong>Уровни преподавания:</strong> Начальный, Средний, Продвинутый</p>
+                                    <p><strong>Доступные дни:</strong> Понедельник, Среда, Пятница</p>
+                                </div>
+                                <button class="btn btn-primary mt-3 w-100" onclick="tutorsManager.showBookingForm(3)">Записаться к преподавателю</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ольга Морозова -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card tutor-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Ольга Морозова</h5>
+                                <div class="tutor-info">
+                                    <div class="d-flex flex-wrap justify-content-between">
+                                        <p class="me-2"><strong>Опыт:</strong> 9 лет</p>
+                                        <p><strong>Цена:</strong> 2600₽/час</p>
+                                    </div>
+                                    <p class="mb-2"><strong>Языки:</strong> Итальянский, Испанский</p>
+                                    <p><strong>Владение языками:</strong> Русский, Итальянский, Испанский</p>
+                                    <p><strong>Уровни преподавания:</strong> Начальный, Средний, Продвинутый</p>
+                                    <p><strong>Доступные дни:</strong> Понедельник, Среда, Пятница</p>
+                                </div>
+                                <button class="btn btn-primary mt-3 w-100" onclick="tutorsManager.showBookingForm(7)">Записаться к преподавателю</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Французский язык -->
+            <div class="tab-pane fade" id="frenchTutors">
+                <div class="row">
+                    <!-- Дмитрий Новиков -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card tutor-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Дмитрий Новиков</h5>
+                                <div class="tutor-info">
+                                    <div class="d-flex flex-wrap justify-content-between">
+                                        <p class="me-2"><strong>Опыт:</strong> 7 лет</p>
+                                        <p><strong>Цена:</strong> 2400₽/час</p>
+                                    </div>
+                                    <p class="mb-2"><strong>Языки:</strong> Французский</p>
+                                    <p><strong>Владение языками:</strong> Русский, Французский, Английский</p>
+                                    <p><strong>Уровни преподавания:</strong> Начальный, Средний, Продвинутый</p>
+                                    <p><strong>Доступные дни:</strong> Вторник, Четверг, Суббота</p>
+                                </div>
+                                <button class="btn btn-primary mt-3 w-100" onclick="tutorsManager.showBookingForm(6)">Записаться к преподавателю</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Итальянский язык -->
+            <div class="tab-pane fade" id="italianTutors">
+                <div class="row">
+                    <!-- Екатерина Смирнова -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card tutor-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Екатерина Смирнова</h5>
+                                <div class="tutor-info">
+                                    <div class="d-flex flex-wrap justify-content-between">
+                                        <p class="me-2"><strong>Опыт:</strong> 6 лет</p>
+                                        <p><strong>Цена:</strong> 2200₽/час</p>
+                                    </div>
+                                    <p class="mb-2"><strong>Языки:</strong> Испанский, Итальянский</p>
+                                    <p><strong>Владение языками:</strong> Русский, Испанский, Итальянский</p>
+                                    <p><strong>Уровни преподавания:</strong> Начальный, Средний, Продвинутый</p>
+                                    <p><strong>Доступные дни:</strong> Понедельник, Среда, Пятница</p>
+                                </div>
+                                <button class="btn btn-primary mt-3 w-100" onclick="tutorsManager.showBookingForm(3)">Записаться к преподавателю</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ольга Морозова -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card tutor-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Ольга Морозова</h5>
+                                <div class="tutor-info">
+                                    <div class="d-flex flex-wrap justify-content-between">
+                                        <p class="me-2"><strong>Опыт:</strong> 9 лет</p>
+                                        <p><strong>Цена:</strong> 2600₽/час</p>
+                                    </div>
+                                    <p class="mb-2"><strong>Языки:</strong> Итальянский, Испанский</p>
+                                    <p><strong>Владение языками:</strong> Русский, Итальянский, Испанский</p>
+                                    <p><strong>Уровни преподавания:</strong> Начальный, Средний, Продвинутый</p>
+                                    <p><strong>Доступные дни:</strong> Понедельник, Среда, Пятница</p>
+                                </div>
+                                <button class="btn btn-primary mt-3 w-100" onclick="tutorsManager.showBookingForm(7)">Записаться к преподавателю</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Китайский язык -->
+            <div class="tab-pane fade" id="chineseTutors">
+                <div class="row">
+                    <!-- Александр Козлов -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card tutor-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Александр Козлов</h5>
+                                <div class="tutor-info">
+                                    <div class="d-flex flex-wrap justify-content-between">
+                                        <p class="me-2"><strong>Опыт:</strong> 10 лет</p>
+                                        <p><strong>Цена:</strong> 3000₽/час</p>
+                                    </div>
+                                    <p class="mb-2"><strong>Языки:</strong> Китайский</p>
+                                    <p><strong>Владение языками:</strong> Русский, Китайский, Английский</p>
+                                    <p><strong>Уровни преподавания:</strong> Начальный, Средний, Продвинутый</p>
+                                    <p><strong>Доступные дни:</strong> Вторник, Четверг, Суббота</p>
+                                </div>
+                                <button class="btn btn-primary mt-3 w-100" onclick="tutorsManager.showBookingForm(4)">Записаться к преподавателю</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Наталья Кузнецова -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card tutor-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Наталья Кузнецова</h5>
+                                <div class="tutor-info">
+                                    <div class="d-flex flex-wrap justify-content-between">
+                                        <p class="me-2"><strong>Опыт:</strong> 6 лет</p>
+                                        <p><strong>Цена:</strong> 2700₽/час</p>
+                                    </div>
+                                    <p class="mb-2"><strong>Языки:</strong> Китайский</p>
+                                    <p><strong>Владение языками:</strong> Русский, Китайский, Английский</p>
+                                    <p><strong>Уровни преподавания:</strong> Начальный, Средний, Продвинутый</p>
+                                    <p><strong>Доступные дни:</strong> Понедельник, Среда, Пятница</p>
+                                </div>
+                                <button class="btn btn-primary mt-3 w-100" onclick="tutorsManager.showBookingForm(9)">Записаться к преподавателю</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Японский язык -->
+            <div class="tab-pane fade" id="japaneseTutors">
+                <div class="row">
+                    <!-- Мария Соколова -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card tutor-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Мария Соколова</h5>
+                                <div class="tutor-info">
+                                    <div class="d-flex flex-wrap justify-content-between">
+                                        <p class="me-2"><strong>Опыт:</strong> 4 года</p>
+                                        <p><strong>Цена:</strong> 2800₽/час</p>
+                                    </div>
+                                    <p class="mb-2"><strong>Языки:</strong> Японский</p>
+                                    <p><strong>Владение языками:</strong> Русский, Японский, Английский</p>
+                                    <p><strong>Уровни преподавания:</strong> Начальный, Средний, Продвинутый</p>
+                                    <p><strong>Доступные дни:</strong> Понедельник, Среда, Пятница</p>
+                                </div>
+                                <button class="btn btn-primary mt-3 w-100" onclick="tutorsManager.showBookingForm(5)">Записаться к преподавателю</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- График работы преподавателей -->
+        <div class="schedule-section mt-5">
+            <h2 class="text-center mb-4">График работы преподавателей</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Преподаватель</th>
+                            <th>ПН</th>
+                            <th>ВТ</th>
+                            <th>СР</th>
+                            <th>ЧТ</th>
+                            <th>ПТ</th>
+                            <th>СБ</th>
+                            <th>ВС</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Анна Петрова</td>
+                            <td class="schedule-available">✓</td>
+                            <td class="schedule-unavailable">-</td>
+                            <td class="schedule-available">✓</td>
+                            <td class="schedule-unavailable">-</td>
+                            <td class="schedule-available">✓</td>
+                            <td class="schedule-unavailable">-</td>
+                            <td class="schedule-unavailable">-</td>
+                        </tr>
+                        <tr>
+                            <td>Михаил Иванов</td>
+                            <td class="schedule-unavailable">-</td>
+                            <td class="schedule-available">✓</td>
+                            <td class="schedule-unavailable">-</td>
+                            <td class="schedule-available">✓</td>
+                            <td class="schedule-unavailable">-</td>
+                            <td class="schedule-available">✓</td>
+                            <td class="schedule-unavailable">-</td>
+                        </tr>
+                        <tr>
+                            <td>Екатерина Смирнова</td>
+                            <td class="schedule-available">✓</td>
+                            <td class="schedule-unavailable">-</td>
+                            <td class="schedule-available">✓</td>
+                            <td class="schedule-unavailable">-</td>
+                            <td class="schedule-available">✓</td>
+                            <td class="schedule-unavailable">-</td>
+                            <td class="schedule-unavailable">-</td>
+                        </tr>
+                        <tr>
+                            <td>Александр Козлов</td>
+                            <td class="schedule-unavailable">-</td>
+                            <td class="schedule-available">✓</td>
+                            <td class="schedule-unavailable">-</td>
+                            <td class="schedule-available">✓</td>
+                            <td class="schedule-unavailable">-</td>
+                            <td class="schedule-available">✓</td>
+                            <td class="schedule-unavailable">-</td>
+                        </tr>
+                        <tr>
+                            <td>Мария Соколова</td>
+                            <td class="schedule-available">✓</td>
+                            <td class="schedule-unavailable">-</td>
+                            <td class="schedule-available">✓</td>
+                            <td class="schedule-unavailable">-</td>
+                            <td class="schedule-available">✓</td>
+                            <td class="schedule-unavailable">-</td>
+                            <td class="schedule-unavailable">-</td>
+                        </tr>
+                        <tr>
+                            <td>Дмитрий Новиков</td>
+                            <td class="schedule-unavailable">-</td>
+                            <td class="schedule-available">✓</td>
+                            <td class="schedule-unavailable">-</td>
+                            <td class="schedule-available">✓</td>
+                            <td class="schedule-unavailable">-</td>
+                            <td class="schedule-available">✓</td>
+                            <td class="schedule-unavailable">-</td>
+                        </tr>
+                        <tr>
+                            <td>Ольга Морозова</td>
+                            <td class="schedule-available">✓</td>
+                            <td class="schedule-unavailable">-</td>
+                            <td class="schedule-available">✓</td>
+                            <td class="schedule-unavailable">-</td>
+                            <td class="schedule-available">✓</td>
+                            <td class="schedule-unavailable">-</td>
+                            <td class="schedule-unavailable">-</td>
+                        </tr>
+                        <tr>
+                            <td>Сергей Волков</td>
+                            <td class="schedule-unavailable">-</td>
+                            <td class="schedule-available">✓</td>
+                            <td class="schedule-unavailable">-</td>
+                            <td class="schedule-available">✓</td>
+                            <td class="schedule-unavailable">-</td>
+                            <td class="schedule-available">✓</td>
+                            <td class="schedule-unavailable">-</td>
+                        </tr>
+                        <tr>
+                            <td>Наталья Кузнецова</td>
+                            <td class="schedule-available">✓</td>
+                            <td class="schedule-unavailable">-</td>
+                            <td class="schedule-available">✓</td>
+                            <td class="schedule-unavailable">-</td>
+                            <td class="schedule-available">✓</td>
+                            <td class="schedule-unavailable">-</td>
+                            <td class="schedule-unavailable">-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подключение скриптов -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/courses.js"></script>
+    <script src="js/tutors.js"></script>
+    <script src="js/orders.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const api = new API('ваш_api_ключ');
+            window.tutorsManager = new TutorsManager(api);
+            window.orderManager = new OrderManager(api);
+            
+            // Обработчики фильтров
+            document.getElementById('languageFilter').addEventListener('change', () => tutorsManager.filterTutors());
+            document.getElementById('weekdaysFilter').addEventListener('change', () => tutorsManager.filterTutors());
+            document.getElementById('weekendsFilter').addEventListener('change', () => tutorsManager.filterTutors());
+            
+            // Обработчики вкладок
+            document.querySelectorAll('#languageTabs .nav-link').forEach(tab => {
+                tab.addEventListener('click', (e) => {
+                    const language = e.target.textContent.trim();
+                    if (language !== 'Все преподаватели') {
+                        document.getElementById('languageFilter').value = language;
+                        tutorsManager.filterTutors();
+                    }
+                });
+            });
+        });
+    </script>
+
+    <!-- Модальное окно записи к преподавателю -->
+    <div class="modal fade" id="bookTutorModal" tabindex="-1" aria-labelledby="bookTutorModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bookTutorModalLabel">Запись к преподавателю</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="bookTutorForm">
+                        <div class="mb-3">
+                            <label for="studentName" class="form-label">Ваше имя</label>
+                            <input type="text" class="form-control" id="studentName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="studentPhone" class="form-label">Телефон</label>
+                            <input type="tel" class="form-control" id="studentPhone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="lessonDate" class="form-label">Дата занятия</label>
+                            <input type="date" class="form-control" id="lessonDate" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="lessonTime" class="form-label">Время занятия</label>
+                            <input type="time" class="form-control" id="lessonTime" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="lessonDuration" class="form-label">Длительность занятия</label>
+                            <select class="form-select" id="lessonDuration" required>
+                                <option value="60">60 минут</option>
+                                <option value="90">90 минут</option>
+                                <option value="120">120 минут</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="lessonType" class="form-label">Тип занятия</label>
+                            <select class="form-select" id="lessonType" required>
+                                <option value="online">Онлайн</option>
+                                <option value="offline">Очно</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                    <button type="button" class="btn btn-primary" id="confirmBooking">Записаться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно вакансий -->
+    <div class="modal fade" id="vacancyModal" tabindex="-1" aria-labelledby="vacancyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="vacancyModalLabel">Стать преподавателем</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <h6 class="mb-3">Требования к кандидатам:</h6>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Высшее лингвистическое образование</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Опыт преподавания от 2 лет</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Владение методиками преподавания</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Ответственность и пунктуальность</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="mb-3">Мы предлагаем:</h6>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-star text-warning me-2"></i>Гибкий график работы</li>
+                                <li class="mb-2"><i class="fas fa-star text-warning me-2"></i>Конкурентную оплату</li>
+                                <li class="mb-2"><i class="fas fa-star text-warning me-2"></i>Профессиональное развитие</li>
+                                <li class="mb-2"><i class="fas fa-star text-warning me-2"></i>Дружный коллектив</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <form id="vacancyForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="candidateName" class="form-label">Ваше имя</label>
+                                <input type="text" class="form-control" id="candidateName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="candidatePhone" class="form-label">Телефон</label>
+                                <input type="tel" class="form-control" id="candidatePhone" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="candidateEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="candidateEmail" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="teachingExperience" class="form-label">Опыт преподавания</label>
+                                <select class="form-select" id="teachingExperience" required>
+                                    <option value="">Выберите...</option>
+                                    <option value="0-2">До 2 лет</option>
+                                    <option value="2-5">2-5 лет</option>
+                                    <option value="5+">Более 5 лет</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="teachingLanguages" class="form-label">Преподаваемые языки</label>
+                                <select class="form-select" id="teachingLanguages" multiple required>
+                                    <option value="russian">Русский язык</option>
+                                    <option value="english">Английский язык</option>
+                                    <option value="spanish">Испанский язык</option>
+                                    <option value="french">Французский язык</option>
+                                    <option value="italian">Итальянский язык</option>
+                                    <option value="chinese">Китайский язык</option>
+                                    <option value="japanese">Японский язык</option>
+                                </select>
+                                <div class="form-text">Зажмите Ctrl для выбора нескольких языков</div>
+                            </div>
+                            <div class="col-12">
+                                <label for="aboutCandidate" class="form-label">О себе</label>
+                                <textarea class="form-control" id="aboutCandidate" rows="3" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <label for="candidateResume" class="form-label">Прикрепить резюме</label>
+                                <input type="file" class="form-control" id="candidateResume" accept=".pdf,.doc,.docx">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary" id="submitVacancy">Отправить заявку</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
